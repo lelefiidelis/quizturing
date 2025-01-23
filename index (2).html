@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - O Jogo da Imitação</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="questoes-quiz">
+    <h1 id="titulo">Quiz: O Jogo da Imitação</h1>
+    <div id="quiz">
+      <div class="pergunta" data-index="0" style="display: block;">
+        <p>1. Quem foi o matemático que protagonizou o filme?</p>
+        <form>
+          <label><input type="radio" name="q1" value="false"> Stephen Hawking</label><br>
+          <label><input type="radio" name="q1" value="false"> Albert Einstein</label><br>
+          <label><input type="radio" name="q1" value="true"> Alan Turing</label><br>
+          <label><input type="radio" name="q1" value="false"> Isaac Newton</label><br>
+        </form>
+      </div>
+      <div class="pergunta" data-index="1" style="display: none;">
+        <p>2. Qual era o objetivo principal de Alan Turing no filme?</p>
+        <form>
+          <label><input type="radio" name="q2" value="false"> Decifrar mensagens nazistas</label><br>
+          <label><input type="radio" name="q2" value="false"> Criar um computador pessoal</label><br>
+          <label><input type="radio" name="q2" value="false"> Construir uma bomba</label><br>
+          <label><input type="radio" name="q2" value="false"> Desenvolver uma linguagem de programação</label><br>
+        </form>
+      </div>
+      <div class="pergunta" data-index="2" style="display: none;">
+        <p>3. Como Alan Turing chamou a máquina que criou para decifrar os códigos alemães?</p>
+        <form>
+          <label><input type="radio" name="q3" value="false"> Enigma</label><br>
+          <label><input type="radio" name="q3" value="true"> Bombe</label><br>
+          <label><input type="radio" name="q3" value="false"> Colossus</label><br>
+          <label><input type="radio" name="q3" value="false"> Athena</label><br>
+        </form>
+      </div>
+      <div class="pergunta" data-index="3" style="display: none;">
+        <p>4. Qual era a principal ameaça enfrentada pelos Aliados que motivou o trabalho em Bletchley Park?</p>
+        <form>
+          <label><input type="radio" name="q4" value="false"> Ataques nucleares</label><br>
+          <label><input type="radio" name="q4" value="true"> Submarinos alemães no Atlântico</label><br>
+          <label><input type="radio" name="q4" value="false"> Bombardeios em massa nas cidades</label><br>
+          <label><input type="radio" name="q4" value="false"> Invasão terrestre pela Alemanha</label><br>
+        </form>
+      </div>
+      <div class="pergunta" data-index="4" style="display: none;">
+        <p>5. Quem sugeriu a contratação de Joan Clarke para a equipe de Alan Turing?</p>
+        <form>
+          <label><input type="radio" name="q5" value="false"> Alan Turing</label><br>
+          <label><input type="radio" name="q5" value="false"> O comandante Denniston</label><br>
+          <label><input type="radio" name="q5" value="true"> Um teste de inteligência</label><br>
+          <label><input type="radio" name="q5" value="false"> Hugh Alexander</label><br>
+        </form>
+      </div>
+      <div class="pergunta" data-index="5" style="display: none;">
+        <p>6. Qual era o maior desafio moral enfrentado por Alan Turing e sua equipe ao decifrar o código Enigma?</p>
+        <form>
+          <label><input type="radio" name="q6" value="true"> Decidir quais informações usar sem alertar os alemães</label><br>
+          <label><input type="radio" name="q6" value="false"> Ocultar seu trabalho do governo britânico</label><br>
+          <label><input type="radio" name="q6" value="false"> Lidar com as suspeitas de espionagem</label><br>
+          <label><input type="radio" name="q6" value="false"> Dividir os méritos da descoberta</label><br>
+        </form>
+      </div>
+      <div class="pergunta" data-index="6" style="display: none;">
+        <p>7. Por que Alan Turing foi condenado após o final da guerra?</p>
+        <form>
+          <label><input type="radio" name="q7" value="false"> Por roubar informações sigilosas</label><br>
+          <label><input type="radio" name="q7" value="false"> Por ser acusado de traição</label><br>
+          <label><input type="radio" name="q7" value="true"> Por sua orientação sexual</label><br>
+          <label><input type="radio" name="q7" value="false"> Por trabalhar secretamente para os alemães</label><br>
+        </form>
+      </div>
+      <div class="pergunta" data-index="7" style="display: none;">
+        <p>8. Qual é o nome do artigo que Alan Turing publicou, considerado uma das bases para a ciência da computação moderna?</p>
+        <form>
+          <label><input type="radio" name="q8" value="false"> "Sobre o Problema da Decisão"</label><br>
+          <label><input type="radio" name="q8" value="false"> "Os Limites do Computável"</label><br>
+          <label><input type="radio" name="q8" value="false"> "Máquinas Computáveis"</label><br>
+          <label><input type="radio" name="q8" value="true"> "O Jogo da Imitação"</label><br>
+        </form>
+      </div>
+      <div class="pergunta" data-index="8" style="display: none;">
+        <h1>Você acertou <span id="pontuacao">0</span> questões!</h1>
+      </div>
+      <div class="botoes">
+        <button id="btn-retorno" onclick="navegarPergunta(-1)">Anterior</button>
+        <button id="btn-final" onclick="navegarPergunta()" style="display: none;">Finalizar</button>
+        <button id="btn-proximo" onclick="navegarPergunta(1)">Próximo</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
